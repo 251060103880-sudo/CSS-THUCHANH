@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài thực hành CSS - Nguyễn Phương Ly</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f5;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 35px;
+            border: 2px solid #ff69b4;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+        }
+
+        h1 {
+            color: #ff1493;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .links a {
+            display: block;
+            background-color: #ffb6c1;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .links a:hover {
+            background-color: #ff69b4;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>BÀI THỰC HÀNH CSS</h1>
+
+        <p>Họ tên: Nguyễn Phương Ly</p>
+        <p>Lớp: Thương mại điện tử</p>
+
+        <div class="links">
+            <a href="bai1.html">
+                Bài 1: Thông tin cá nhân
+            </a>
+
+            <a href="bai2.html">
+                Bài 2: Bảng điểm sinh viên
+            </a>
+
+            <a href="bai3.html">
+                Bài 3: Form đăng ký sinh viên
+            </a>
+        </div>
+    </main>
+</body>
+</html>

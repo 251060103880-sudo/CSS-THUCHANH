@@ -1,0 +1,278 @@
+
+/* CSS CHUNG */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf6ff;
+    color: rgb(50, 50, 50);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* KHUNG THÔNG TIN */
+
+.profile {
+    width: 90%;
+    max-width: 500px;
+    padding: 25px;
+    margin: 30px auto;
+
+    background-color: white;
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+/* TIÊU ĐỀ */
+
+.profile-header {
+    background-image: linear-gradient(
+        90deg,
+        #ffb6c1,
+        #ff69b4
+    );
+
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ẢNH ĐẠI DIỆN */
+
+#avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #ff69b4;
+    margin: 20px auto;
+    display: block;
+}
+
+/* THÔNG TIN */
+
+.profile p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* SỞ THÍCH */
+
+.hobbies {
+    font-style: italic;
+}
+
+/* ========== BÀI 2 ========== */
+
+.table-container {
+    position: relative;
+    width: 95%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 65px 20px 30px;
+    background-color: white;
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+}
+
+/* Nhãn bảng điểm */
+.table-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Bảng điểm */
+.score-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.score-table th,
+.score-table td {
+    border: 1px solid #ffb6c1;
+    padding: 12px;
+}
+
+/* Tiêu đề bảng */
+.score-table th {
+    background-color: #ff69b4;
+    color: white;
+}
+
+/* Căn giữa cột STT và Điểm */
+.score-table td:first-child,
+.score-table td:last-child {
+    text-align: center;
+}
+
+/* Màu xen kẽ */
+.score-table tbody tr:nth-child(even) {
+    background-color: #fff0f5;
+}
+
+.score-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Hiệu ứng di chuột */
+.score-table tbody tr:hover {
+    background-color: #ffd1dc;
+}
+
+/* Điểm trung bình */
+.score-table .average {
+    background-color: #ffc0cb !important;
+    font-weight: bold;
+}
+
+/* ========== BÀI 3 ========== */
+
+.form-container {
+    position: relative;
+    width: 95%;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 65px 30px 30px;
+    background-color: white;
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(255,105,180,0.2);
+}
+
+.form-label {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff69b4;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: 0;
+    margin-bottom: 18px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+.form-group input:not([type="radio"]):not([type="checkbox"]),
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffb6c1;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fffafa;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #ff1493;
+    outline: 2px solid rgba(255,20,147,0.2);
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #ff69b4;
+}
+
+.btn-submit:hover {
+    background-color: #ff1493;
+}
+
+.btn-reset {
+    background-color: #f48fb1;
+}
+
+.btn-reset:hover {
+    background-color: #ec407a;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .form-container {
+        padding: 65px 15px 20px;
+    }
+}

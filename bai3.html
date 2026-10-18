@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="form-container">
+        <span class="form-label">ĐĂNG KÝ MỚI</span>
+
+        <h1>FORM ĐĂNG KÝ SINH VIÊN</h1>
+
+        <form action="#" method="get">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fullname">Họ tên</label>
+                    <input type="text"
+                           id="fullname"
+                           name="fullname"
+                           placeholder="Nhập họ tên"
+                           required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email"
+                           id="email"
+                           name="email"
+                           placeholder="Nhập email"
+                           required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="birthday">Ngày sinh</label>
+                <input type="date"
+                       id="birthday"
+                       name="birthday">
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính</label>
+                <div class="options">
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="nam">
+                        Nam
+                    </label>
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="nu">
+                        Nữ
+                    </label>
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="khac">
+                        Khác
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Sở thích</label>
+                <div class="options">
+                    <label>
+                        <input type="checkbox"
+                               name="hobby"
+                               value="music">
+                        Âm nhạc
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                               name="hobby"
+                               value="sports">
+                        Thể thao
+                    </label>
+                    <label>
+                        <input type="checkbox"
+                               name="hobby"
+                               value="reading">
+                        Đọc sách
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="major">Ngành học</label>
+                <select id="major" name="major">
+                    <option value="">-- Chọn ngành --</option>
+                    <option value="cntt">Công nghệ thông tin</option>
+                    <option value="qtkd">Quản trị kinh doanh</option>
+                    <option value="kt">Kế toán</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="note">Ghi chú</label>
+                <textarea id="note"
+                          name="note"
+                          rows="4"
+                          placeholder="Nhập ghi chú"></textarea>
+            </div>
+
+            <div class="form-buttons">
+                <button type="submit" class="btn-submit">
+                    Đăng ký
+                </button>
+                <button type="reset" class="btn-reset">
+                    Nhập lại
+                </button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

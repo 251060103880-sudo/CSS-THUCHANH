@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1, h2 {
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .hobbies {
+            list-style-type: square;
+            text-align: left;
+        }
+
+        .hobbies li {
+            padding: 10px;
+            margin-bottom: 8px;
+            border-radius: 8px;
+        }
+
+        .hobbies li:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <main class="profile">
+        <header class="profile-header">
+            <h1>THÔNG TIN CÁ NHÂN</h1>
+        </header>
+
+        <img src="avatar.jpg"
+             id="avatar"
+             alt="Ảnh đại diện sinh viên">
+
+        <!-- Inline CSS -->
+        <p style="color: black; font-weight: bold;">
+    Họ tên: Nguyễn Phương Ly
+</p>
+
+<p>Ngày sinh: 22/08/2007</p>
+
+<p>Lớp: Thương mại điện tử</p>
+
+        <h2>SỞ THÍCH</h2>
+
+        <ul class="hobbies">
+            <li>Đọc sách</li>
+            <li>Nghe nhạc</li>
+            <li>Du lịch</li>
+            <li>Học lập trình</li>
+        </ul>
+
+        <a href="https://github.com"
+           target="_blank"
+           rel="noopener noreferrer">
+            GitHub cá nhân
+        </a>
+    </main>
+</body>
+</html>
